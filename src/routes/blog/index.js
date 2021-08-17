@@ -61,7 +61,7 @@ function getBlogBody(data, isLoading) {
 				{ details.cover && <div class={style.blogcover} style={`background-image:url(${details.cover})`} /> }
 				{ details.tables1 && 
 				  <div style='background-color: gray'>
-					<Markdown>{details.tables1}</Markdown>
+					<Markdown>{details.tables1.map(i => <div>{i}</div>)}</Markdown>
 				  </div>
 				}
 				{ details.tables2 && 
