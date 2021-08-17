@@ -61,12 +61,12 @@ function getBlogBody(data, isLoading) {
 				{ details.cover && <div class={style.blogcover} style={`background-image:url(${details.cover})`} /> }
 				{ details.tables1 && 
 				  <div style='background-color: gray'>
-					<p>{details.talbes1}</p>
+					<p>{details.tables1}</p>
 				  </div>
 				}
 				{ details.tables2 && 
 				  <div style='background-color: red'>
-					<p>{details.talbes2}</p>
+					<p>{details.tables2}</p>
 				  </div>
 				}
 				<div class={style.blogbody}>
