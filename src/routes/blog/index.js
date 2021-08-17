@@ -53,19 +53,20 @@ function getBlogBody(data, isLoading) {
 
 	if (data && data.data) {
 		const { details, content } = data.data;
+		console.log(details)
 		return (
 			<div>
 				<h1 class={style.blogtitle}>{details.title}</h1>
 				{ details.subtitle && <caption class={style.blogsubtitle}>{details.subtitle}</caption> }
 				{ details.cover && <div class={style.blogcover} style={`background-image:url(${details.cover})`} /> }
 				{ details.tables1 && 
-				  <div>
-					{details.talbes1}
+				  <div style='background-color: gray'>
+					<p>{details.talbes1}</p>
 				  </div>
 				}
 				{ details.tables2 && 
-				  <div>
-					{details.talbes2}
+				  <div style='background-color: red'>
+					<p>{details.talbes2}</p>
 				  </div>
 				}
 				<div class={style.blogbody}>
