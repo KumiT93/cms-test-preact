@@ -58,6 +58,16 @@ function getBlogBody(data, isLoading) {
 				<h1 class={style.blogtitle}>{details.title}</h1>
 				{ details.subtitle && <caption class={style.blogsubtitle}>{details.subtitle}</caption> }
 				{ details.cover && <div class={style.blogcover} style={`background-image:url(${details.cover})`} /> }
+				{ details.tables1 && 
+				  <div>
+					{talbes1}
+				  </div>
+				}
+				{ details.tables2 && 
+				  <div>
+					{talbes2}
+				  </div>
+				}
 				<div class={style.blogbody}>
 					<Markdown options={{
 						overrides: {
